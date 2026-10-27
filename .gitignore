@@ -1,19 +1,34 @@
 # Local configuration may contain environment-specific host mappings.
 /config.json
+/config.*.json
+!/config.example.json
 /config.local*.json
 
 # Generated private keys, certificates and bundles.
 /certs/
+/overrides/
 *.key
 *.pem
+*.crt
 *.pfx
 *.bkp
+*.p12
+*.der
 
 # Captures can contain account, session and authentication data.
 /logs/
 /logs-test/
 *.log
 *.decoded.txt
+*.dmp
+*.pcap
+*.pcapng
+*.sqlite*
+*.db*
+
+# Python build/cache artifacts used by optional lab tooling.
+__pycache__/
+*.py[cod]
 
 # Build products and temporary output.
 /hostspy.exe
