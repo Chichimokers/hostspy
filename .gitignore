@@ -1,0 +1,22 @@
+# Local configuration may contain environment-specific host mappings.
+/config.json
+/config.local*.json
+
+# Generated private keys, certificates and bundles.
+/certs/
+*.key
+*.pem
+*.pfx
+*.bkp
+
+# Captures can contain account, session and authentication data.
+/logs/
+/logs-test/
+*.log
+*.decoded.txt
+
+# Build products and temporary output.
+/hostspy.exe
+/out/
+*.test
+coverage.out
